@@ -20,6 +20,6 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     
-    path('', include('primes.urls')),  # Include the primes app URLs
+    path('', include('primes.urls')),
 
 ]
