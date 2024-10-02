@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prime Number Input</title>
+</head>
+<body>
+    <h1>Enter a Number</h1>
+    <form method="post" action="{% url 'output_page' %}">
+        {% csrf_token %}
+        <input type="number" name="number" placeholder="Enter a number" required>
+        <button type="submit">Find Primes</button>
+    </form>
+</body>
+</html>
